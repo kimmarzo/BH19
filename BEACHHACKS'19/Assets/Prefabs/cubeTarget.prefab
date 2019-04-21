@@ -14530,6 +14530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2f2850d002f14a47bff32fdf73df53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cubeTarget: {fileID: 1074091000367105982}
   explosion: {fileID: 2098326007269191715}
   onceOnly: 0
   targetCenter: {fileID: 0}
@@ -14551,7 +14552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   myTransform: {fileID: 2295915316711196008}
-  runningSpeed: 3
+  runningSpeed: 4
 --- !u!1 &2296656720635652269
 GameObject:
   m_ObjectHideFlags: 0

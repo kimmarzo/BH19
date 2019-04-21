@@ -14,6 +14,7 @@ namespace Valve.VR.InteractionSystem
 	//-------------------------------------------------------------------------
 	public class ArcheryTarget : MonoBehaviour
 	{
+        public GameObject cubeTarget;
         public ParticleSystem explosion;
 		public bool onceOnly = false;
 		public Transform targetCenter;
@@ -45,7 +46,8 @@ namespace Valve.VR.InteractionSystem
 		private void OnDamageTaken()
 		{
             explosion.Emit(100);
-            
+            cubeTarget.GetComponent<MeshRenderer>().enabled = false;
+
 			//if ( targetEnabled )
 			//{
 			//	onTakeDamage.Invoke();
