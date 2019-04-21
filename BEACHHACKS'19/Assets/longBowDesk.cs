@@ -25,7 +25,7 @@ public class longBowDesk : MonoBehaviour
         {
   
             transform.position += Vector3.down* Time.deltaTime* SpeedTable;
-            if (tutorialCubes.transform.position.y < tutCubeHeight)
+            if (tutorialCubes.transform.position.y < (tutCubeHeight+1))
             {
                 tutorialCubes.transform.position += Vector3.up * Time.deltaTime * SpeedTutCubes;
                 BowTableSystem.transform.position += Vector3.down * Time.deltaTime * SpeedTable;
