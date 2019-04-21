@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.beachhacks19.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\KJRM\\Documents\\BH19\\BEACHHACKS'19\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "BEACHHACKS'19 [Testing]"
+        }
+      }
+    }
+  ]
+}

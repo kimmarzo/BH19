@@ -409,32 +409,32 @@
     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\VRTK_TunnelEffect.shader" />
     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\TransparentFresnelBehind.shader" />
     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\Unlit_TransparentColor.shader" />
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>C:/Users/KJRM/Documents/BH19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/KJRM/Desktop/T2_VGDA_S19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/KJRM/Documents/BH19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/KJRM/Desktop/T2_VGDA_S19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/KJRM/Documents/BH19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/KJRM/Desktop/T2_VGDA_S19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/KJRM/Desktop/T2_VGDA_S19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/KJRM/Desktop/T2_VGDA_S19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/KJRM/Documents/BH19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/KJRM/Desktop/T2_VGDA_S19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>C:/Users/KJRM/Documents/BH19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/KJRM/Desktop/T2_VGDA_S19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>C:/Users/KJRM/Desktop/T2_VGDA_S19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>C:/Users/KJRM/Documents/BH19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>C:/Users/KJRM/Desktop/T2_VGDA_S19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>C:/Users/KJRM/Documents/BH19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/KJRM/Documents/BH19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>C:/Users/KJRM/Documents/BH19/BEACHHACKS'19/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -640,17 +640,17 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Valve.Newtonsoft.Json">
+      <HintPath>C:/Users/KJRM/Documents/BH19/BEACHHACKS'19/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/KJRM/Desktop/T2_VGDA_S19/BEACHHACKS'19/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/KJRM/Documents/BH19/BEACHHACKS'19/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/KJRM/Desktop/T2_VGDA_S19/BEACHHACKS'19/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/KJRM/Documents/BH19/BEACHHACKS'19/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/KJRM/Desktop/T2_VGDA_S19/BEACHHACKS'19/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>C:/Users/KJRM/Desktop/T2_VGDA_S19/BEACHHACKS'19/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:/Users/KJRM/Documents/BH19/BEACHHACKS'19/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -999,6 +999,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{EE09FD72-AE47-7662-B676-AFD8A669212B}</Project>
+      <Name>SteamVR_Actions</Name>
+    </ProjectReference>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
       <Project>{7510B361-BF5E-5D6D-D12A-6509E82805ED}</Project>
       <Name>SteamVR_Input_Editor</Name>
