@@ -9,6 +9,7 @@ public class TutToLevel : MonoBehaviour
     public GameObject tutCube3;
     public GameObject leftGate;
     public GameObject rightGate;
+    public GameObject projectileSet;
     bool openGates = false;
     public float gateSpeed = .5f;
     public float waitTimeForGate = 3f;
@@ -32,7 +33,8 @@ public class TutToLevel : MonoBehaviour
         yield return new WaitForSeconds(waitTimeForGate);
         leftGate.transform.position += Vector3.left * Time.deltaTime * gateSpeed;
         rightGate.transform.position += Vector3.right * Time.deltaTime * gateSpeed;
-
-        Debug.Log("OPEN GATE PLTHHHHHHHHHHH");
+        yield return new WaitForSeconds(2f);
+        projectileSet.SetActive(true);
+        
     }
 }
