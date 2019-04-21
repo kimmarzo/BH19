@@ -14,6 +14,9 @@ namespace Valve.VR.InteractionSystem
     //-------------------------------------------------------------------------
     public class TargetRetry : MonoBehaviour
     {
+
+        public GameObject destroy1;
+        public GameObject destroy2;
         public bool onceOnly = false;
         public Transform targetCenter;
 
@@ -43,7 +46,8 @@ namespace Valve.VR.InteractionSystem
         //-------------------------------------------------
         private void OnDamageTaken()
         {
-            Debug.Log("DAMAGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+            Destroy(destroy1);
+            Destroy(destroy2);
             SceneManager.LoadScene(0);
             //if ( targetEnabled )
             //{
