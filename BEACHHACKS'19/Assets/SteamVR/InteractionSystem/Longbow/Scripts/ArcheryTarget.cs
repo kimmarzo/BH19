@@ -13,8 +13,6 @@ namespace Valve.VR.InteractionSystem
 	//-------------------------------------------------------------------------
 	public class ArcheryTarget : MonoBehaviour
 	{
-		public UnityEvent onTakeDamage;
-
 		public bool onceOnly = false;
 		public Transform targetCenter;
 
@@ -44,38 +42,40 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		private void OnDamageTaken()
 		{
-			if ( targetEnabled )
-			{
-				onTakeDamage.Invoke();
-				StartCoroutine( this.FallDown() );
+            Debug.Log("DAMAGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+            Destroy(gameObject);
+			//if ( targetEnabled )
+			//{
+			//	onTakeDamage.Invoke();
+			//	StartCoroutine( this.FallDown() );
 
-				if ( onceOnly )
-				{
-					targetEnabled = false;
-				}
-			}
+			//	if ( onceOnly )
+			//	{
+			//		targetEnabled = false;
+			//	}
+			//}
 		}
 
 
-		//-------------------------------------------------
-		private IEnumerator FallDown()
-		{
-			if ( baseTransform )
-			{
-				Quaternion startingRot = baseTransform.rotation;
+		////-------------------------------------------------
+		//private IEnumerator FallDown()
+		//{
+		//	if ( baseTransform )
+		//	{
+		//		Quaternion startingRot = baseTransform.rotation;
 
-				float startTime = Time.time;
-				float rotLerp = 0f;
+		//		float startTime = Time.time;
+		//		float rotLerp = 0f;
 
-				while ( rotLerp < 1 )
-				{
-					rotLerp = Util.RemapNumberClamped( Time.time, startTime, startTime + fallTime, 0f, 1f );
-					baseTransform.rotation = Quaternion.Lerp( startingRot, fallenDownTransform.rotation, rotLerp );
-					yield return null;
-				}
-			}
+		//		while ( rotLerp < 1 )
+		//		{
+		//			rotLerp = Util.RemapNumberClamped( Time.time, startTime, startTime + fallTime, 0f, 1f );
+		//			baseTransform.rotation = Quaternion.Lerp( startingRot, fallenDownTransform.rotation, rotLerp );
+		//			yield return null;
+		//		}
+		//	}
 
-			yield return null;
-		}
+		//	yield return null;
+		//}
 	}
 }

@@ -338,6 +338,7 @@ namespace Valve.VR.InteractionSystem
 
             if (attachedToHand != null)
             {
+          
                 attachedToHand.ForceHoverUnlock();
             }
 
