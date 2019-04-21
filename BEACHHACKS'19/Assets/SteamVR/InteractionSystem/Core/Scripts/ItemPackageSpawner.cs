@@ -153,6 +153,7 @@ namespace Valve.VR.InteractionSystem
 				dropEvent.Invoke();
 				CreatePreviewObject();
 			}
+
 		}
 
 
@@ -163,6 +164,7 @@ namespace Valve.VR.InteractionSystem
 
 			if ( currentAttachedItemPackage == itemPackage ) // the item at the top of the hand's stack has an associated ItemPackage
 			{
+              
 				if ( takeBackItem && !requireReleaseActionToReturn ) // if we want to take back matching items and aren't waiting for a trigger press
 				{
 					TakeBackItem( hand );

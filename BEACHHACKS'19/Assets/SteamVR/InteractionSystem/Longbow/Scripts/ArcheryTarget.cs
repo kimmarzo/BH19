@@ -44,7 +44,7 @@ namespace Valve.VR.InteractionSystem
 		private void OnDamageTaken()
 		{
             Debug.Log("DAMAGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
-            SceneManager.LoadScene("mainMenu");
+            Destroy(gameObject);
 			//if ( targetEnabled )
 			//{
 			//	onTakeDamage.Invoke();
