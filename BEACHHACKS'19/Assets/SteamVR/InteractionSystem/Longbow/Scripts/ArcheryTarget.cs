@@ -7,6 +7,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 namespace Valve.VR.InteractionSystem
 {
@@ -43,7 +44,7 @@ namespace Valve.VR.InteractionSystem
 		private void OnDamageTaken()
 		{
             Debug.Log("DAMAGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
-            Destroy(gameObject);
+            SceneManager.LoadScene("mainMenu");
 			//if ( targetEnabled )
 			//{
 			//	onTakeDamage.Invoke();
