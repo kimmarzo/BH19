@@ -14,13 +14,14 @@ namespace Valve.VR.InteractionSystem
 	//-------------------------------------------------------------------------
 	public class ArcheryTarget : MonoBehaviour
 	{
+        public ParticleSystem explosion;
 		public bool onceOnly = false;
 		public Transform targetCenter;
 
 		public Transform baseTransform;
 		public Transform fallenDownTransform;
 		public float fallTime = 0.5f;
-
+        public GameObject parentWhole;
 		const float targetRadius = 0.25f;
 
 		private bool targetEnabled = true;
@@ -43,8 +44,8 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		private void OnDamageTaken()
 		{
-            Debug.Log("DAMAGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
-            Destroy(gameObject);
+            explosion.Emit(100);
+            
 			//if ( targetEnabled )
 			//{
 			//	onTakeDamage.Invoke();

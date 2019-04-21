@@ -14,6 +14,7 @@ namespace Valve.VR.InteractionSystem
 	//-------------------------------------------------------------------------
 	public class TutCube : MonoBehaviour
 	{
+        public ParticleSystem explosion;
 		public bool onceOnly = false;
 		public Transform targetCenter;
 
@@ -43,19 +44,21 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		private void OnDamageTaken()
 		{
-            gameObject.SetActive(false);
-       
-			//if ( targetEnabled )
-			//{
-			//	onTakeDamage.Invoke();
-			//	StartCoroutine( this.FallDown() );
 
-			//	if ( onceOnly )
-			//	{
-			//		targetEnabled = false;
-			//	}
-			//}
-		}
+            explosion.Emit(100);
+            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
+            //if ( targetEnabled )
+            //{
+            //	onTakeDamage.Invoke();
+            //	StartCoroutine( this.FallDown() );
+
+            //	if ( onceOnly )
+            //	{
+            //		targetEnabled = false;
+            //	}
+            //}
+        }
 
 
 		////-------------------------------------------------

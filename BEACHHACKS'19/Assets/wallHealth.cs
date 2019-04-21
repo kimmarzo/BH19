@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class wallHealth : MonoBehaviour
 {
+    public GameObject Spawner;
     [Header("Health System")]
     public float maxHealth = 100;
     public float damageInc = 10;
@@ -35,6 +36,7 @@ public class wallHealth : MonoBehaviour
     public IEnumerator gameOverScreen()
     {
         GOScreen.SetActive(true);
+        Spawner.SetActive(false);
         yield return new WaitForSeconds(timerGOScreen);
         SceneManager.LoadScene("mainLevel_K");
     }
