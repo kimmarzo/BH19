@@ -27,15 +27,15 @@ public class wallHealth : MonoBehaviour
     {
         if (maxHealth <= 0)
         {
-            StartCoroutine(gameOverScreen());
-       
+            //StartCoroutine(gameOverScreen());
+            GOScreen.SetActive(true);
         }
     }
 
     public IEnumerator gameOverScreen()
     {
-        //GOScreen.SetActive(true);
+        GOScreen.SetActive(true);
         yield return new WaitForSeconds(timerGOScreen);
-        SceneManager.LoadScene("mainLevel");
+        SceneManager.LoadScene("mainLevel_K");
     }
 }
