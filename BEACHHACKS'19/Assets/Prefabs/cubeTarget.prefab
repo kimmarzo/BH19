@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2892383299768206274}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: TargetCubeW
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 154780682602609775}
   m_Layer: 0
   m_Name: practiceCube
-  m_TagString: TargetCubeW
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14497,7 +14497,7 @@ GameObject:
   - component: {fileID: 7331243389629196907}
   m_Layer: 0
   m_Name: cubeTarget
-  m_TagString: TargetCubeW
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14530,10 +14530,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2f2850d002f14a47bff32fdf73df53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubeTarget: {fileID: 1074091000367105982}
   explosion: {fileID: 2098326007269191715}
   onceOnly: 0
   targetCenter: {fileID: 0}
+  cubeTarget: {fileID: 1074091000367105982}
   baseTransform: {fileID: 0}
   fallenDownTransform: {fileID: 0}
   fallTime: 0.5
@@ -14552,7 +14552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   myTransform: {fileID: 2295915316711196008}
-  runningSpeed: 4
+  runningSpeed: 3
 --- !u!1 &2296656720635652269
 GameObject:
   m_ObjectHideFlags: 0

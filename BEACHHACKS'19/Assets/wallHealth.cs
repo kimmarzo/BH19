@@ -14,10 +14,10 @@ public class wallHealth : MonoBehaviour
     public float timerGOScreen = 3.0f;
     public GameObject GOScreen;
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.tag == "TargetCubeW")
+        if (other.gameObject.tag == "Player")
         {
             maxHealth -= damageInc;
             Destroy(other.gameObject);

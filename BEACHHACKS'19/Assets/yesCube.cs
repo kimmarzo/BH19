@@ -18,12 +18,13 @@ namespace Valve.VR.InteractionSystem
         public ParticleSystem explosion;
 		public bool onceOnly = false;
 		public Transform targetCenter;
-        public GameObject destroyThis;
+        public GameObject destroythis;
 		public Transform baseTransform;
 		public Transform fallenDownTransform;
 		public float fallTime = 0.5f;
         public GameObject parentWhole;
 		const float targetRadius = 0.25f;
+        public GameObject spawner;
 
 		private bool targetEnabled = true;
 
@@ -47,8 +48,9 @@ namespace Valve.VR.InteractionSystem
 		private void OnDamageTaken()
 		{
             explosion.Emit(100);
-            Destroy(destroyThis);
-            SceneManager.LoadScene("kcopy");
+            spawner.SetActive(false);
+            Destroy(destroythis);
+            SceneManager.LoadScene(0);
             //if ( targetEnabled )
             //{
             //	onTakeDamage.Invoke();
