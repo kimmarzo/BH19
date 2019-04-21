@@ -9,7 +9,7 @@ public class wallHealth : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.tag == "projectile")
+        if (other.gameObject.tag == "TargetCubeW")
         {
             health -= 10;
             Destroy(other.gameObject);
